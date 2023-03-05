@@ -1,3 +1,14 @@
+# Nardus Mollentze
+
+## Analysis pipelines
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nardus&repo=ace2)](https://github.com/nardus/ace2)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=viralemergence&repo=haystack)](https://github.com/viralemergence/haystack)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nardus&repo=zoonotic_rank)](https://github.com/nardus/zoonotic_rank)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nardus&repo=hiv_growth_rates)](https://github.com/nardus/hiv_growth_rates)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nardus&repo=isg_composition)](https://github.com/nardus/isg_composition)
+
+
+## Activity
 <!--Stats (light mode) -->
 <a href="https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only">
   <img align="center" alt="Nardus's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=nardus&count_private=true&show_icons=true&theme=default#gh-light-mode-only" />
