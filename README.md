@@ -8,19 +8,6 @@
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nardus&repo=isg_composition)](https://github.com/nardus/isg_composition)
 
 
-## Activity
-<!--Stats (light mode) -->
-<a href="https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only">
-  <img align="center" alt="Nardus's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=nardus&count_private=true&show_icons=true&theme=default#gh-light-mode-only" />
-</a>
-<a href="https://github.com/anuraghazra/github-readme-stats#gh-light-mode-only">
-  <img align="center" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nardus&count_private=true&exclude_repo=nardusmollentze.com&layout=compact&theme=default#gh-light-mode-only" />
-</a>
-
-<!--Stats (dark mode) -->
-<a href="https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only">
-  <img align="center" alt="Nardus's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=nardus&count_private=true&show_icons=true&theme=dark#gh-dark-mode-only" />
-</a>
-<a href="https://github.com/anuraghazra/github-readme-stats#gh-dark-mode-only">
-  <img align="center" alt="Most used languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nardus&count_private=true&exclude_repo=nardusmollentze.com&layout=compact&theme=dark#gh-dark-mode-only" />
-</a>
+## Libraries
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nardus&repo=beast_utils)](https://github.com/nardus/beast_utils)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=nardus&repo=geo_features)](https://github.com/nardus/geo_features)
