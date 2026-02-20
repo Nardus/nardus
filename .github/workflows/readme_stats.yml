@@ -20,7 +20,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&exclude_repo=nardusmollentze.com&hide=tex&theme=dark
+          options: username=${{ github.repository_owner }}&layout=normal&langs_count=6&exclude_repo=nardusmollentze.com&hide=tex&theme=dark
           path: cards/top-langs-dark.svg
           token: ${{ secrets.PAT }}
 
@@ -28,7 +28,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&exclude_repo=nardusmollentze.com&hide=tex&theme=default
+          options: username=${{ github.repository_owner }}&layout=normal&langs_count=6&exclude_repo=nardusmollentze.com&hide=tex&theme=default
           path: cards/top-langs-light.svg
           token: ${{ secrets.PAT }}
 
@@ -47,13 +47,13 @@ jobs:
     strategy:
       matrix:
         include:
-          - { repo: ace2,            username: "${{ github.repository_owner }}" }
-          - { repo: haystack,        username: "viralemergence" }
-          - { repo: zoonotic_rank,   username: "${{ github.repository_owner }}" }
-          - { repo: hiv_growth_rates, username: "${{ github.repository_owner }}" }
-          - { repo: isg_composition, username: "${{ github.repository_owner }}" }
-          - { repo: beast_utils,     username: "${{ github.repository_owner }}" }
-          - { repo: geo_features,    username: "${{ github.repository_owner }}" }
+          - { repo: ace2,              username: "${{ github.repository_owner }}" }
+          - { repo: haystack,          username: "viralemergence" }
+          - { repo: zoonotic_rank,     username: "${{ github.repository_owner }}" }
+          - { repo: hiv_growth_rates,  username: "${{ github.repository_owner }}" }
+          - { repo: isg_composition,   username: "${{ github.repository_owner }}" }
+          - { repo: beast_utils,       username: "${{ github.repository_owner }}" }
+          - { repo: geo_features,      username: "${{ github.repository_owner }}" }
 
     steps:
       - uses: actions/checkout@v6
