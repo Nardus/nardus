@@ -50,6 +50,57 @@ jobs:
           path: cards/pin-ace2-light.svg
           token: ${{ secrets.PAT }}
 
+      # - zoonotic_rank
+      - name: Generate pin card - zoonotic_rank (dark mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=zoonotic_rank&theme=dark
+          path: cards/pin-zoonotic_rank-dark.svg
+          token: ${{ secrets.PAT }}
+
+      - name: Generate pin card - zoonotic_rank (light mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=zoonotic_rank&theme=default
+          path: cards/pin-zoonotic_rank-light.svg
+          token: ${{ secrets.PAT }}
+
+      # - hiv_growth_rates
+      - name: Generate pin card - hiv_growth_rates (dark mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=hiv_growth_rates&theme=dark
+          path: cards/pin-hiv_growth_rates-dark.svg
+          token: ${{ secrets.PAT }}
+
+      - name: Generate pin card - hiv_growth_rates (light mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=hiv_growth_rates&theme=default
+          path: cards/pin-hiv_growth_rates-light.svg
+          token: ${{ secrets.PAT }}
+
+      # - isg_composition
+      - name: Generate pin card - isg_composition (dark mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=isg_composition&theme=dark
+          path: cards/pin-isg_composition-dark.svg
+          token: ${{ secrets.PAT }}
+
+      - name: Generate pin card - isg_composition (light mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=isg_composition&theme=default
+          path: cards/pin-isg_composition-light.svg
+          token: ${{ secrets.PAT }}
+
       # Commit
       - name: Commit cards
         run: |
