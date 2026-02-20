@@ -1,0 +1,60 @@
+name: Update README cards
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs once daily at midnight
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      # Top languages
+      - name: Generate top languages card (dark mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&exclude_repo=nardusmollentze.com&hide=tex&theme=dark
+          path: cards/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card (light mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&exclude_repo=nardusmollentze.com&hide=tex&theme=default
+          path: cards/top-langs-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Pinned repos
+      # - ACE2
+      - name: Generate pin card - ace2 (dark mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=ace2&theme=dark
+          path: cards/pin-ace2-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card - ace2 (light mode)
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=ace2&theme=default
+          path: cards/pin-ace2-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Commit
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README cards" || exit 0
+          git push
