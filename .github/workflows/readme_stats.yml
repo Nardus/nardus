@@ -22,7 +22,7 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&exclude_repo=nardusmollentze.com&hide=tex&theme=dark
           path: cards/top-langs-dark.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
 
       - name: Generate top languages card (light mode)
         uses: readme-tools/github-readme-stats-action@v1
@@ -30,7 +30,7 @@ jobs:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&langs_count=6&exclude_repo=nardusmollentze.com&hide=tex&theme=default
           path: cards/top-langs-light.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
 
       # Pinned repos
       # - ACE2
@@ -40,7 +40,7 @@ jobs:
           card: pin
           options: username=${{ github.repository_owner }}&repo=ace2&theme=dark
           path: cards/pin-ace2-dark.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
 
       - name: Generate pin card - ace2 (light mode)
         uses: readme-tools/github-readme-stats-action@v1
@@ -48,7 +48,7 @@ jobs:
           card: pin
           options: username=${{ github.repository_owner }}&repo=ace2&theme=default
           path: cards/pin-ace2-light.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
 
       # Commit
       - name: Commit cards
