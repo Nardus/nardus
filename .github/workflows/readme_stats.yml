@@ -47,13 +47,28 @@ jobs:
     strategy:
       matrix:
         include:
-          - { repo: ace2,              username: "${{ github.repository_owner }}" }
-          - { repo: haystack,          username: "viralemergence" }
-          - { repo: zoonotic_rank,     username: "${{ github.repository_owner }}" }
-          - { repo: hiv_growth_rates,  username: "${{ github.repository_owner }}" }
-          - { repo: isg_composition,   username: "${{ github.repository_owner }}" }
-          - { repo: beast_utils,       username: "${{ github.repository_owner }}" }
-          - { repo: geo_features,      username: "${{ github.repository_owner }}" }
+          # Public
+          - { repo: ace2,                    username: "${{ github.repository_owner }}" }
+          - { repo: haystack,                username: "viralemergence" }
+          - { repo: zoonotic_rank,           username: "${{ github.repository_owner }}" }
+          - { repo: hiv_growth_rates,        username: "${{ github.repository_owner }}" }
+          - { repo: isg_composition,         username: "${{ github.repository_owner }}" }
+          - { repo: beast_utils,             username: "${{ github.repository_owner }}" }
+          - { repo: geo_features,            username: "${{ github.repository_owner }}" }
+
+          # Private / work in progress
+          - { repo: phipseq_design,          username: "${{ github.repository_owner }}" }
+          - { repo: phip_phage_stock_qc,     username: "${{ github.repository_owner }}" }
+          - { repo: phip_analysis_template,  username: "${{ github.repository_owner }}" }
+          - { repo: phip_alignment,          username: "${{ github.repository_owner }}" }
+          - { repo: phip_enrichment_models,  username: "${{ github.repository_owner }}" }
+          
+          - { repo: rabies_invasion,         username: "${{ github.repository_owner }}" }
+          - { repo: skunk_rabies,            username: "${{ github.repository_owner }}" }
+          - { repo: geometric_h3,            username: "${{ github.repository_owner }}" }
+          - { repo: rabies_stnn,             username: "${{ github.repository_owner }}" }
+          
+          - { repo: t_cell_crossreactivity,  username: "${{ github.repository_owner }}" }
 
     steps:
       - uses: actions/checkout@v6
